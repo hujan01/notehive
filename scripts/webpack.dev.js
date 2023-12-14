@@ -7,5 +7,8 @@ module.exports = merge(base, {
     devServer: {
         open: true, // 编译完自动打开浏览器
         port: 8080,
+        proxy: {
+            '/api': 'http://localhost:8081'
+        }
     },
 })

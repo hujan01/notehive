@@ -34,7 +34,7 @@ module.exports = {
             },
             {
                 // 匹配js/jsx
-                test: /\.jsx?$/,
+                test: /\.jsx?$/i,
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
